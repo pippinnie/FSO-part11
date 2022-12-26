@@ -28,7 +28,7 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           build: npm run build
-          start: npm run server && npm run start-prod
+          start: npm run server, npm run start-prod
           wait-on: http://localhost:3000
   tag_release:
     needs: [simple_deployment_pipeline]
